@@ -10,4 +10,9 @@ fn main(){
         mut c: [i32;a], // a個の配列を受け取る
         mut s: Chars // 文字列をVec<char>で受け取る
     }
+    
+    let num :f32 = 10.11;
+
+    let kiriage:f32 = num.ceil(); //切り上げ
+    let kirisute:f32 = num.floor(); // 切り捨て
 }
