@@ -12,4 +12,7 @@ fn main(){
     }
 
     println!("{}", min);
+
+    // これでもいいらしい
+    // println!("{}", a.iter().min().unwrap());
 }
