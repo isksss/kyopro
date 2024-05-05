@@ -8,14 +8,6 @@ Rust習得も兼ねてRustで解く。
 
 [isksss](https://atcoder.jp/users/isksss)
 
-## Usage
+## 使用
 
-atcoder/contest_name/number/*.rs
-
-main.rsがベース
-
-## memo
-
-- [RustCoder ―― AtCoder と Rust で始める競技プログラミング入門](https://zenn.dev/toga/books/rust-atcoder)
-- [[Rustで簡単標準入力]proconio使い方まとめ](https://qiita.com/Pikka2048/items/a0247e792aa4f8f6dd92)
-- [RustでAtCoderに挑戦してみて気づいたポイントまとめ](https://zenn.dev/nsarbosh/articles/4ef65d54c8b2d7)
+[qryxip/cargo-compete](https://github.com/qryxip/cargo-compete/)
