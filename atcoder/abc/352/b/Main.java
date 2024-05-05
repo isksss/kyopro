@@ -1,44 +1,27 @@
-
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        try(Scanner sc = new Scanner(System.in);
+            PrintWriter pw = new PrintWriter(System.out);){
 
-        int n = sc.nextInt();
+                String s = sc.nextLine();
+                String t = sc.nextLine();
 
-        int[] a = new int[n];
-        int[] b = new int[n];
+                int tn = 0;
 
-        for(int i=0; i<n; i++){
-            a[i] = sc.nextInt();
-            b[i] = sc.nextInt();
-
-            // System.out.println(a[i] + " " + b[i]);
+                for(int i=0; i<s.length(); i++){
+                    // System.out.print(s.charAt(i));
+                    for(int j=tn;j<t.length() && tn < t.length(); j++){
+                        if(s.charAt(i) == t.charAt(j)){
+                            System.out.print((j+1) + " ");
+                            tn = j + 1;
+                            break;
+                        }
+                    }
+                }
         }
-        int max = 0;
-        int c = a[0];
-        int m = b[0]-a[0]; // 頭最高の人
-        int mi = 0;
-
-        for(int i=1; i<n; i++){
-            int h = b[i]- a[i];
-            if(h>m){
-                max += c;
-
-                //
-                c = a[i];
-                m = h;
-                mi = i;
-                continue;
-            }else{
-                max += a[i];
-            }
-        }
-
-        max += m;
-        System.out.println(max);
-        
     }
     
 }
