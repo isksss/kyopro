@@ -3,7 +3,7 @@ use proconio::input;
 
 fn main() {
     // ===== input =====
-    input!{
+    input! {
         _n: usize,
         x: usize,
         y: usize,
@@ -14,11 +14,10 @@ fn main() {
     let mut ans: &str = "No";
 
     // ===== solve =====
-    if (x<y && x<z && z<y) || (x>y && y<z && z<x){
+    if (x < y && x < z && z < y) || (x > y && y < z && z < x) {
         ans = "Yes";
     }
 
     // ===== output =====
     println!("{}", ans);
 }
-

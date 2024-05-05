@@ -27,7 +27,7 @@ use proconio::input;
 
 fn main() {
     // ===== input =====
-    input!{
+    input! {
         x: usize,
         y: usize,
         z: usize,
@@ -37,10 +37,11 @@ fn main() {
     let mut ans: usize = 0;
 
     // ===== solve =====
-    
+
     // ===== output =====
     println!("{}", ans);
 }
+
 
 '''
 
@@ -143,7 +144,7 @@ path = "./atcoder/{{ contest }}"
 
 [test]
 # Toolchain for the test. (optional)
-toolchain = "1.42.0"
+# toolchain = "1.42.0"
 # Profile for `cargo build`. ("dev" | "release")
 #
 # Defaults to `"dev"`.

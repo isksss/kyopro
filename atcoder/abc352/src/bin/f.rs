@@ -3,7 +3,7 @@ use proconio::input;
 
 fn main() {
     // ===== input =====
-    input!{
+    input! {
         x: usize,
         y: usize,
         z: usize,
@@ -13,8 +13,7 @@ fn main() {
     let mut ans: usize = 0;
 
     // ===== solve =====
-    
+
     // ===== output =====
     println!("{}", ans);
 }
-
